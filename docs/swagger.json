@@ -1,0 +1,48 @@
+//INCOMPLETE
+openapi: 3.0.1
+info:
+  title: Core API
+  description: The worlds funnest little API
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:3000/'
+paths:
+  /categories:
+    get:
+      description: Gets all categories
+      responses:
+        '200':
+          description: Returned a list of categories
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/getAll'
+  /products:  
+    post:
+      description: Create new object
+      responses:
+        '200':
+        # description: Returned newly created object
+        # content:
+          # '*/*':
+            # schema:
+              $ref: '#/components/schemas/getAll'
+    
+  '/categories/{id}':
+    get:
+      parameters: 
+      - id: "id"
+        in: "path"
+      description: Returned category,
+      responses: 
+        '200':
+          description: Success
+    # put: {}
+    # delete: {}
+components:
+  schemas:
+    getAll:
+      type: object
+      example:
+        - '{}'
+        - '{}'

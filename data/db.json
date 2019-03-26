@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Jimmy",
+      "display_name": "JJ",
+      "description": "Likes to jump trash cans"
+    },
+    {
+      "name": "Fred",
+      "display_name": "Freddinator",
+      "description": "Daftly optimistic",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Car",
+      "display_name": "Mazda",
+      "description": "Drives like a can of beans",
+      "id": 1
+    },
+    {
+      "name": "Car",
+      "display_name": "VW",
+      "description": "Nice seats",
+      "id": 2
+    }
+  ]
+}
